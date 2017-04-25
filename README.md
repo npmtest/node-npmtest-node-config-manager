@@ -1,6 +1,6 @@
 # npmtest-node-config-manager
 
-#### test coverage for  [node-config-manager (v1.2.0)](https://github.com/Valko54/node-config-manager#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-node-config-manager.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-node-config-manager) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-node-config-manager.svg)](https://travis-ci.org/npmtest/node-npmtest-node-config-manager)
+#### basic test coverage for  [node-config-manager (v1.2.0)](https://github.com/Valko54/node-config-manager#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-node-config-manager.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-node-config-manager) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-node-config-manager.svg)](https://travis-ci.org/npmtest/node-npmtest-node-config-manager)
 
 #### A configuration manager for NodeJS. It helps you to organize your project and the different configurations of your environments.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-node-config-manager/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-node-config-manager/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-node-config-manager/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-node-config-manager/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-node-config-manager/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-node-config-manager/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-node-config-manager/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-node-config-manager/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-node-config-manager/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-node-config-manager/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-node-config-manager/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-node-config-manager/build/coverage.html/index.html)
 
@@ -97,7 +97,8 @@
         "test": "NODE_ENV='test' ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test",
         "test-on-travis": "NODE_ENV='test' ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
     },
-    "version": "1.2.0"
+    "version": "1.2.0",
+    "bin": {}
 }
 ```
 
